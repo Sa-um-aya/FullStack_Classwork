@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    padding:20px;
+    background:#f4f4f4;
+}
+
+.container{
+    display:grid;
+    gap:3%;
+    grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+
+    grid-template-areas:
+        "box1 box1 box2"
+        "box1 box1 box2"
+        "box3 box4 box5"
+        "box6 box7 box8";
+}
+@media (min-width:500px){
+    .container{
+        grid-template-areas:
+        "box1 box2 box3"
+        "box4 box5 box6"
+        "box8 box4 box5"
+        "box6 box7 box8";
+    }
+}
+.box{
+    background-color:blueviolet;
+    min-height:150px;
+    border-radius:8px;
+}
+
+
+
+.box1{ grid-area:box1; }
+.box2{ grid-area:box2; }
+.box3{ grid-area:box3; }
+.box4{ grid-area:box4; }
+.box5{ grid-area:box5; }
+.box6{ grid-area:box6; }
+.box7{ grid-area:box7; }
+.box8{ grid-area:box8; }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+    <div class="box box7"></div>
+    <div class="box box8"></div>
+
+</div>
+
+</body>
+</html>
