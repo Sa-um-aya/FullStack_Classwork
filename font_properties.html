@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>😁 Document 😁</title>
+
+<style>
+    @font-face{
+        font-family:"HappySwirly";
+        src:url("./fonts/Happy\ Swirly.ttf");
+    }
+    p{
+        font-family:"HappySwirly";
+    }
+    *{
+        margin:0;
+        padding:0;
+        color:magenta;
+    }
+    #myId{
+        color:green;
+    }
+    .myclass{
+       color: blue;
+    }
+    input[type="email"]{
+        border-radius:15px;
+        color:red;
+    }
+    h2{
+        color:violet;
+    }
+    ul>li.myclass>span{
+        background-color:black;
+        color:white;
+    }
+    /*h3+p first para after h3*/ div>p{
+        color:aqua;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <span>
+        <h3>heading</h3>
+        <p>para1</p>
+        <p>para2</p>
+        </span>
+        </div>
+    <h2>Selectors</h2>
+    <p>Om Namo Narayanay</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXIGkwMbe0K_g5mBhb8jz3LgyxwJfP2LcrFFI0mRdbOg&s=10">
+    <ul>
+        <li class="myclass">Universal<span>123</span></li>
+        <li id="myId">Id</li>
+        <li class="myclass">Class<span>123</span></li>
+        <li>Attribute</li>
+        <li>Element Name</li>
+        <li>Combinators</li>
+        <li>Pseudo Class</li>
+        <li>Pseudo Elements</li>
+        </ul>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <section>
+            <h2>Heading</h2>
+             <p>Para 1</p>
+             <p></p>   
+            
+        </section>
+        </body>
+    </html>

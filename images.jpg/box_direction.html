@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>😁 Photo Gallery 😁</title>
+<style>
+    .container{
+        flex-direction:column;
+        outline:3px solid black;
+        height:90vh;
+        display:flex;
+        flex-wrap:wrap;
+       /* justify-content:flex-end;
+        align-items:center;*/
+    }
+    .container>div{
+        color:white;
+        width:150px;
+        height:100px;
+    }
+    #box1{
+        background-color:red;
+        flex-basis:150px;
+        height:100px;
+          width:300px;
+         /*flex-grow:2;*/
+         flex-shrink:3;
+    }
+    #box2{
+        background-color:magenta;
+          flex-basis:150px;
+          height:100px;
+          width:300px;
+          /*flex-grow:1;*/
+          flex-shrink:3;
+    }
+    #box3{
+        background-color:green;
+          flex-basis:150px;
+          height:100px;
+          width:300px;
+         /* flex-grow:1;*/
+          flex-shrink:1;
+    }
+    #box4{
+        background-color:pink;
+          flex-basis:150px;
+          height:100px;
+          width:300px;
+         /* flex-grow:1;*/
+          flex-shrink:1;
+
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+    <div id="box1">
+        <h2>Smartwatch😁</h2>
+        <p>$134</p></div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
+    <div id="box4">box4</div>
+    
+    </div>
+</body>
+</html>

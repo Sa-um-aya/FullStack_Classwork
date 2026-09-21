@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Baymax Blinking Eyes</title>
+<style>
+  .baymax {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    margin: 50px auto;
+  }
+
+  /* Eyes */
+  .baymax::before,
+  .baymax::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 50%;
+    top: 15px;
+    animation: blink 4s infinite;
+    transform-origin: center;
+  }
+
+  .baymax::before {
+    left: 0;
+  }
+
+  .baymax::after {
+    right: 0;
+  }
+
+  /* Connector line */
+  .baymax span {
+    position: absolute;
+    top: 28px;
+    left: 30px;
+    right: 30px;
+    height: 4px;
+    background: black;
+  }
+
+  /* Blinking animation */
+  @keyframes blink {
+    0%, 90%, 100% {
+      transform: scaleY(1);
+    }
+    95% {
+      transform: scaleY(0.1);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="baymax">
+    <span></span>
+  </div>
+</body>
+</html>

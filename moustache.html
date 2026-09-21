@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Moustache with CSS</title>
+<style>
+  .moustache {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin: 50px auto;
+  }
+
+  .moustache::before,
+  .moustache::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background:magenta;
+    border-radius: 50% 50% 0 0;
+    top: 25px;
+  }
+
+  .moustache::before {
+    left: 0;
+    transform: rotate(30deg);
+  }
+
+  .moustache::after {
+    right: 0;
+    transform: rotate(-30deg);
+  }
+</style>
+</head>
+<body>
+  <div class="moustache"></div>
+</body>
+</html>

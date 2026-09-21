@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>😁 Document 😁</title>
+
+<style>
+    li:not(:hover){
+        color:yellow;
+    }
+    button:not(:hover){
+        color:magenta;
+    }
+   /*Property transferred to parent due to child*/ div:has(h2){
+        background-color:red;
+        color:white;
+    }
+    /*if either h2 or h3 is present in the class then the property gets applied*/div:is(h2,h3){
+        background-color:red;
+        color:white;
+    }
+    div:has(h2,h3){
+        box-shadow:0 0 3px;
+    }
+    #{
+        height:30px;
+        background-color:aqua;
+    }
+    .a::before{
+        content:"A";
+        position:absolute;
+        left:0px;
+    }
+    #a::after{
+        content:"B";
+        position:absolute;
+    }
+    </style>
+    </head>
+    <body>
+        <ul>
+            <li>1</li>
+             <li>2</li>
+            <li>3💖</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+        </ul>
+        <div>
+            <p>OM NAMO NARAYANAY
+            </p>
+            </div>
+            <div>
+                <div>
+                <h2>HARIBOL</h2>
+                <p>Om namo Bhagwate Vasudevay </p>
+                <h3>Shendur Laal Chadhayio</h3>
+                </div>
+            </div>
+            <div >
+                <h2>❤️❤️❤️❤️❤️</h2>
+                <div>
+                    <div id="a"></div>
+        <button>Hello😁</button>
+        </body>
+        </html>

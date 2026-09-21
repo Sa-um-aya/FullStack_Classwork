@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>😁 Photo Gallery 😁</title>
+
+<style>
+   .container {
+   display: flex;
+   justify-content: center; 
+   align-items: center;     
+   min-height: 100vh;       
+   background-color: #f5f5f5;
+}
+
+    #login{
+      background: magenta;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+     ;
+    }
+    body{
+        margin:0px;
+        padding:0px;
+       background: url("CSS/489048.jpg") ;
+       background-size: cover; 
+    }
+    #login>h2{
+        text-align:center;
+    
+    }
+ input[type="submit"]{
+    margin-top:7%;
+    background-color:black;
+    color:white;
+    box-shadow:3px 3px 0px grey;
+ }
+ .navbar {
+  display: flex;                   
+  justify-content: space-between;  
+  align-items: top;             
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+}
+
+
+.nav-links {
+  display: flex;                 
+  list-style: none;               
+  gap: 1.5rem;                     
+}
+
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;                
+} 
+
+    </style>
+    </head>
+    <body>
+    <nav class="navbar">
+        <img src="CSS/images.jpg/images.jpg">
+  <div class="logo">😁Logo😁</div>
+  <ul class="nav-links">
+    <li><a href="#">Home🏡</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact📞</a></li>
+  </ul>
+</nav>
+        <div class="container" >
+        <div id="login">
+            <h2>🪵Login🏠</h2>
+    <form>
+      <input type="text" placeholder="😁Username" required>Username
+      <input type="password" placeholder="😶Password" required>Password
+      <button type="submit">Login</button>
+    </form></div>
+    </div>
+
+    </body>
+    </html>

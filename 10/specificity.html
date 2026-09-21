@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+  <style>
+    @layer base,l1,special;
+    @layer base{
+
+    
+    p{
+        font-size:30px;
+        color:red;
+    }
+    button{
+        font: size 20px;
+        border-radius:50%;
+        height:150px;
+        width:150px;
+        background-color:white;
+        border:1px solid grey;
+        box-shadow:3px 3px 5px;
+    }
+    button:active{
+        box-shadow:inset 3px 3px 5px grey;
+    }
+} @layer special{
+    body{
+        background-color:black;
+    }
+    p{
+       
+        color:blue;
+        background-color:red;
+    }
+    button{
+        border:1px solid white;
+        box-shadow:3px 3px 5px grey;
+
+    }
+}
+    @layer l1{
+        p{
+            color:orange;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <p>Specificity</p>
+    <p>Shree RAM Prabal Pratap Kaushal Naath GUNGAN GAWAHI</p>
+    <button>Jai Shree Ram</button>
+</body>
+</html>
