@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+  --color--coffee-normal:"#abababa";
+}
+@theme {
+  --breakpoint-3xl: 30rem;
+}
+.heading{
+    @apply m-2 text-red-500 text-3xl font-bold underline text-center bg-blue-500  md:bg-amber-100 sm:@media (width >= 40rem) { ... };
+}
