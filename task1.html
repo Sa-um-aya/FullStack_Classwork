@@ -4,10 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
+<style>
+  .container{
+    display:flex;
+    align-items:flex-start;
+    width:100%;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:32px;
+    border:1px solid;
+    height:200px;
+    outline:solid;
 
+  }
+  #box1{
+    height:400px;
+    width:800px;
+    background-color: aqua;
+    outline:solid;
+    margin:10px;
+    border-radius:10px;
+
+
+  }
+    #box2{
+    height:450px;
+    width:250px;
+    background-color:pink;
+    outline:solid;
+    margin:10px;
+    border-radius:10px;
+  }
+
+  #box3{
+    height:350px;
+    width:200px;
+    background-color:blue;
+    outline:solid;
+    margin:10px;
+    border-radius:10px;
+  }
+  
+ 
+</style>
 </head>
 <body>
- 
-    </div>
+ <h1>Task 1:SAAS Landing Page</h1>
+ <h2>Build a responsive SAAS landing page with flexbox for navigation and grid for feature selection</h2>
+<div class="container">
+  <div id="box1">box1</div>
+  <div id="box2">box2</div>
+  <div id="box3">box3</div>
+</div>  
+<div class="grid">
+  <div id="g1">Colour Palatte</div>
+  <div id="g2">Typography</div>
+  <div id="g3">Key Value</div>
+</div> 
     </body>
     </html>
