@@ -1,0 +1,10 @@
+if(0);
+if(null);
+if(undefined);
+if("");
+if([]){
+    console.log("print");
+}
+if({}){
+    console.log("print");
+}
