@@ -1,5 +1,5 @@
 //setTimeout(function,delay);
-setTimeout(()=>console.log("Hello"),1000);
+/*setTimeout(()=>console.log("Hello"),1000);
 var counter=0;
 setInterval(()=>{
     counter+=1;
@@ -21,4 +21,10 @@ function display(){
     let minutes=Number.parseInt(time/60);
     document.getElementById("min").innerHTML=minutes;
     document.getElementById("sec").innerHTML=seconds;
-}
+}*/
+var jaapcounter=0;
+setInterval(()=>{
+      jaapcounter-=1;
+      console.log("जय श्री राम");
+},200);
+//guess the number between 1 to 100 , user gets only 7 chances;

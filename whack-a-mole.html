@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whack-a-mole</title>
+    <style>
+        .grid{
+            display:flex;
+            flex-wrap:wrap;
+            height:600px;
+            width:600px;
+        }
+        .square{
+            height:200px;
+            width:200px;
+            border:solid magenta 1px;
+        }
+        </style>
+        </head>
+        <body>
+            <h2>ये लो, देख लो अपना स्कोर।</h2>
+            <h2 id="score">0</h2>
+            <h2 id="time-left">60</h2>
+            <div class="grid">
+                <div class="sq" id="1"></div>
+                <div class="sq" id="2"></div>
+                <div class="sq" id="3"></div>
+                <div class="sq" id="4"></div>
+                <div class="sq" id="5"></div>
+                <div class="sq" id="6"></div>
+                <div class="sq" id="7"></div>
+                <div class="sq" id="8"></div>
+                <div class="sq" id="9"></div>
+            </div>
+            <script src="whack-a-mole.js"></script>
+            
+        </body>
+    </html>
